@@ -46,5 +46,6 @@ def genRand(ids):
         targets.append(curr)
   return targets
 
-targets = genRand(ids)
-run(targets)
+while True:
+  targets = genRand(ids)
+  run(targets)

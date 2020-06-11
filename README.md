@@ -1,13 +1,13 @@
-#Trick-Play
+# Trick-Play
 This thing is used to play videos in the `videos_ids.py` on a loop cleanly through the firefox api.
 
-##Installation
-###Pre-Requisites
+## Installation
+### Pre-Requisites
   - Ubuntu
   - Firefox
   - Python3
 
-###Configurations
+### Configurations
 ``` bash
   ./hello.bash BLM
   firefox -P BLM
@@ -15,7 +15,7 @@ This thing is used to play videos in the `videos_ids.py` on a loop cleanly throu
 
 Then install an add-on called `kill-tab`
 
-###Run Things
+### Run Things
 ``` bash
   python3 ./trick-play.py
 ```

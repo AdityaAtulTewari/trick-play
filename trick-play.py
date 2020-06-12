@@ -6,7 +6,6 @@ import random
 
 # Settings to change
 firefox_profile_name="BLM"
-firefox_profile_dir="~/support_BLM"
 
 #Do not mess with these
 firefox_create_profile="./hello.bash BLM"

@@ -6,27 +6,18 @@ import random
 
 # Settings to change
 firefox_profile_name="BLM"
-firefox_profile_dir="~/support_BLM"
 
 #Do not mess with these
-ssh="ssh {display} {login} {cmd}"
 firefox_create_profile="./hello.bash BLM"
 firefox_str="firefox -P " + firefox_profile_name + " "
-D_ON="-Y"
-D_OF=""
 player_str="https://www.youtube.com/watch?v="
 
-
-def runSSH(ssh_str, targets):
-  subprocess.Popen(shlex.split(ssh.format(display=D_OF, login=ssh_str, cmd=firefox_create_profile)))
-  for target in targets:
-    subprocess.Popen(shlex.split(ssh.format(display=D_ON, login=ssh_str, cmd=(firefox_str + player_str + target))))
-
 def run(targets):
-  subprocess.Popen(shlex.split(firefox_create_profile))
+  p0 = subprocess.Popen(shlex.split(firefox_create_profile))
+  p0.wait()
   for target in targets:
     p0 = subprocess.Popen(shlex.split(firefox_str + player_str + target))
-    p0.wait();
+    p0.wait()
 
 
 # 5/3/r/a/m

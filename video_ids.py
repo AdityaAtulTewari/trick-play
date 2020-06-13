@@ -53,7 +53,6 @@ ids = [
 "GeV-NrKaqLc",
 "a3oI8hRjaYc",
 "P8c-jAylYs4",
-"v6Xe8N0FNTs",
 "KRPXyWNTB4A",
 "J4hmiaFVEZ4",
 "tYqzbrFRVHk",
